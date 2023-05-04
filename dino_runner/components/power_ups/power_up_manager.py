@@ -1,4 +1,5 @@
 from dino_runner.components.power_ups.shield import Shield
+from dino_runner.components.power_ups.martillo import Hammer
 
 class PowerUpManager:
     def __init__(self):
@@ -17,3 +18,7 @@ class PowerUpManager:
     def draw(self, screen):
         for power_up in self.power_ups:
             power_up.draw(screen)
+
+    def reset_power(self):
+        self.power_ups = []
+        

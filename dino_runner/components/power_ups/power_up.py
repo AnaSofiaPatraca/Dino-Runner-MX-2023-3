@@ -5,7 +5,7 @@ class PowerUp:
     Y_POS_POWE_UP = 125
     POWER_UP_DURATION = 5000
     
-    def __init__(self, image):
+    def __init__(self, image, type):
         self.image = image
         self.type = type
         self.rect = self.image.get_rect()

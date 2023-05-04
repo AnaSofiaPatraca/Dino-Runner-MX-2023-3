@@ -10,11 +10,12 @@ class Obstacle:
     def update(self, game_speed, player):
         self.rect.x -= game_speed
         if self.rect.colliderect(player.dino_rect):
-            if not player.shield:
-                player.dino_dead = True
-                self.image = DEAD
+            if not player.shield and not player.hammer:
                 pygame.time.delay(2000)
+                player.dino_dead = True
+                player.dead()
+                #self.image = DEAD
+                #player.dino_dead = True
             
-
     def draw(self, screen):
         screen.blit(self.image, self.rect)
