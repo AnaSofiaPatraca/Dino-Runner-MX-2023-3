@@ -75,3 +75,4 @@ HAMMER_TYPE = "hammer"
 
 DEAD = pygame.image.load(os.path.join(IMG_DIR, 'Dino/DinoDead.png'))
 
+ENEMY_DINO = pygame.image.load(os.path.join(IMG_DIR, 'Dino/EnemyDino.png'))

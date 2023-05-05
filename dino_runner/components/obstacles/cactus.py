@@ -4,7 +4,7 @@ from dino_runner.utils.constants import SMALL_CACTUS, LARGE_CACTUS
 
 class Cactus(Obstacle):
     Y_POS_CACTUS = 325
-    Y_POS_CACTUS_LARGE= 300
+    Y_POS_CACTUS_LARGE = 300
     COMBINE_CACTUS = []
 
     def __init__(self):
